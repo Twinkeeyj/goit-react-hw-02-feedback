@@ -1,0 +1,17 @@
+.bgrc {
+  display: inline-block;
+  margin-left: 0px auto;
+  min-height: 300px;
+  min-width: 300px;
+  background-color: rgb(199, 243, 243);
+  text-align: center;
+  padding: 10px;
+  margin-left: auto;
+  border: 2px solid rgb(3, 87, 87);
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-40%, -50%)
+}

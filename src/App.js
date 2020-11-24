@@ -4,6 +4,8 @@ import FeedbackOption from './components/FeedbackOptions/FeedbackOptions';
 import Section from './components/Section/Section';
 import Notification from './components/Notification/Notification';
 
+import classes from "./App.module.css"
+
 export default class App extends Component {
   state = {
     good: 0,
@@ -26,8 +28,8 @@ export default class App extends Component {
   render() {
     const total = this.countTotalFeedback();
       return (
-      <>
-        <Section title="Please leave feedback">
+      <div className={classes.bgrc}>
+        <Section  title="Please leave feedback">
           <FeedbackOption onLeaveFeedback={this.toSetState} />
         </Section>
         {total === 0 ? (
@@ -43,7 +45,7 @@ export default class App extends Component {
             />
           </Section>
         )}
-      </>
+      </div>
     );
   }
 }

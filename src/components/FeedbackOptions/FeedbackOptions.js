@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from "prop-types"
+import classes from "./FeedbackOptions.module.css"
 
 const FeedbackOptions = function ({onLeaveFeedback}) {
   return (
-    <div>
-      <button type="button" name="good" onClick={onLeaveFeedback}>
+    <div className={classes.contayner}>
+      <button className={classes.button} type="button" name="good" onClick={onLeaveFeedback}>
         Good
       </button>
-      <button type="button" name="neutral" onClick={onLeaveFeedback}>
+      <button className={classes.button} type="button" name="neutral" onClick={onLeaveFeedback}>
         Neutral
       </button>
-      <button type="button" name="bad" onClick={onLeaveFeedback}>
+      <button className={classes.button} type="button" name="bad" onClick={onLeaveFeedback}>
         Bad
       </button>
     </div>

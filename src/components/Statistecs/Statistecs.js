@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classes from "./Statistecs.module.css"
 
 
-const Statistecs = ({ good, neutral, bad, set, total, positivePercentage }) => {
+const Statistecs = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <div>
-      <ul>
+      <ul className={classes.list}>
         <li>
-          <p>Good:{good}</p>
+          <p className={classes.good}>Good: {good}</p>
         </li>
         <li>
-          <p>Neutral:{neutral}</p>
+          <p className={classes.neutral}>Neutral: {neutral}</p>
         </li>
         <li>
-          <p>Bad:{bad}</p>
+          <p className={classes.bad}>Bad: {bad}</p>
         </li>
         <li>
-          <p>Total:{total}</p>
+          <p className={classes.total}>Total: {total}</p>
         </li>
         <li>
-          <p>Positive fedback:{positivePercentage}%</p>
+          <p className={classes.fedback}>Positive fedback: {positivePercentage}%</p>
         </li>
       </ul>
     </div>
@@ -28,7 +29,7 @@ const Statistecs = ({ good, neutral, bad, set, total, positivePercentage }) => {
 
 export default Statistecs;
 Statistecs.propTypes = {
-  Good: PropTypes.number.isRequired,
+  good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,

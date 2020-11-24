@@ -1,0 +1,46 @@
+.list{
+  padding-inline-start: 0;
+  list-style-type: none;
+  font-weight: 700;
+  /* border: 2px solid rgb(3, 87, 87); */
+
+
+}
+.size{
+  display: block;
+  color: rgb(44, 3, 30);
+  margin: 0 auto;
+  width: 175px;
+}
+.good{
+  composes: size;
+  border-top: 3px solid rgb(115, 250, 115);
+  border-left:3px solid rgb(115, 250, 115);
+  border-right:3px solid rgb(115, 250, 115);
+  background-color: rgb(60, 247, 60);
+}
+.neutral{
+  composes: size;
+  background-color: rgb(238, 182, 27);
+  border-left:3px solid rgb(247, 204, 89);
+  border-right:3px solid rgb(247, 204, 89);
+}
+.bad{
+  composes: size;
+  background-color: red;
+  border-left:3px solid rgb(255, 96, 96);
+  border-right:3px solid rgb(255, 96, 96);
+}
+.total{
+  composes: size;
+  background-color: rgb(213, 245, 35);
+  border-left:3px solid  rgb(223, 243, 109);
+  border-right:3px solid  rgb(223, 243, 109);
+}
+.fedback{
+  composes: size;
+  background-color: rgb(24, 24, 189);
+  border-bottom: 3px solid rgb(71, 71, 184) ;
+  border-left:3px solid rgb(71, 71, 184);
+  border-right:3px solid rgb(71, 71, 184);
+}
