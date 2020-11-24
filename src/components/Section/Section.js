@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Section = function ({title, children}) {
+const Section = function ({ title, children }) {
   return (
     <section>
       <h1>{title}</h1>
@@ -8,4 +9,11 @@ const Section = function ({title, children}) {
     </section>
   );
 };
-export default Section
+export default Section;
+Section.defaultProps = {
+  title: 'Statistics',
+};
+Section.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.object.isRequired,
+};
